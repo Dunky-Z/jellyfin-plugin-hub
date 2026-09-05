@@ -253,6 +253,7 @@ class ConfigTests(unittest.TestCase):
                 "Skin Manager",
                 "Intro Skipper",
                 "Danmu",
+                "SubMichi",
             ],
         )
         self.assertIn(
@@ -282,6 +283,10 @@ class ConfigTests(unittest.TestCase):
         self.assertIn(
             "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/manifest/manifest.json",
             by_name["Danmu"]["urls"],
+        )
+        self.assertIn(
+            "https://raw.githubusercontent.com/vicvinue/jellyfin-plugin-subtitlecat/main/manifest.json",
+            by_name["SubMichi"]["urls"],
         )
 
 

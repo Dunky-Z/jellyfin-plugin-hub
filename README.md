@@ -35,8 +35,9 @@ https://cdn.jsdelivr.net/gh/Dunky-Z/jellyfin-plugin-hub@main/dist/manifest.json
 | Skin Manager | 只保留 Skin Manager，不含同一仓库里的其它插件 |
 | Intro Skipper | 使用 10.11 清单，只保留 Intro Skipper |
 | Danmu | 官方 manifest，失败则用 `manifest_cn.json` |
+| SubMichi | SubtitleCat 字幕插件，jsDelivr 优先 |
 
-同步后会生成这些插件条目：MetaTube、Jellyfin.MeiamSub.Shooter、Jellyfin.MeiamSub.Thunder、Jellyfin.MeiamSub.Assrt、MetaShark、ThePornDB、Skin Manager、Intro Skipper、Danmu。
+同步后会生成这些插件条目：MetaTube、Jellyfin.MeiamSub.Shooter、Jellyfin.MeiamSub.Thunder、Jellyfin.MeiamSub.Assrt、MetaShark、ThePornDB、Skin Manager、Intro Skipper、Danmu、SubMichi。
 
 ## 添加或更换插件源
 

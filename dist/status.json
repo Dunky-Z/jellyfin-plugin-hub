@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-05T03:51:00Z",
-  "pluginCount": 9,
+  "generatedAt": "2026-09-05T16:05:15Z",
+  "pluginCount": 10,
   "sources": [
     {
       "name": "MetaTube",
@@ -16,9 +16,9 @@
     },
     {
       "name": "MetaShark",
-      "ok": true,
-      "url": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest.json",
-      "count": 1
+      "ok": false,
+      "error": "failed to fetch source MetaShark: https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest.json (URL error for https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest.json: timed out); https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest_cn.json (URL error for https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest_cn.json: timed out)",
+      "count": 0
     },
     {
       "name": "ThePornDB",
@@ -40,8 +40,14 @@
     },
     {
       "name": "Danmu",
+      "ok": false,
+      "error": "failed to fetch source Danmu: https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/manifest/manifest.json (URL error for https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/manifest/manifest.json: timed out); https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/manifest/manifest_cn.json (URL error for https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/manifest/manifest_cn.json: timed out)",
+      "count": 0
+    },
+    {
+      "name": "SubMichi",
       "ok": true,
-      "url": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/manifest/manifest.json",
+      "url": "https://cdn.jsdelivr.net/gh/vicvinue/jellyfin-plugin-subtitlecat@main/manifest.json",
       "count": 1
     }
   ]

@@ -55,6 +55,13 @@
         "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/manifest/manifest.json",
         "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/manifest/manifest_cn.json"
       ]
+    },
+    {
+      "name": "SubMichi",
+      "urls": [
+        "https://cdn.jsdelivr.net/gh/vicvinue/jellyfin-plugin-subtitlecat@main/manifest.json",
+        "https://raw.githubusercontent.com/vicvinue/jellyfin-plugin-subtitlecat/main/manifest.json"
+      ]
     }
   ]
 }
