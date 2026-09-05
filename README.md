@@ -24,37 +24,23 @@ https://cdn.jsdelivr.net/gh/Dunky-Z/jellyfin-plugin-hub@main/dist/manifest.json
 
 ## 当前收录
 
-| 来源 | 清单地址 | 说明 |
-| --- | --- | --- |
-| MetaTube | `https://cdn.jsdelivr.net/gh/metatube-community/jellyfin-plugin-metatube@dist/manifest.json` | 优先使用 |
-| MetaTube | `https://raw.githubusercontent.com/metatube-community/jellyfin-plugin-metatube/dist/manifest.json` | 上一地址失败时回退 |
-| MeiamSubtitles | `https://github.com/91270/MeiamSubtitles.Release/raw/main/Plugin/manifest-stable.json` | 含 Shooter / Thunder / Assrt |
+完整地址见 `sources.json`。同一来源的多个 URL 按顺序尝试，成功即停。
 
-同步后当前会生成 4 个插件条目：MetaTube、Jellyfin.MeiamSub.Shooter、Jellyfin.MeiamSub.Thunder、Jellyfin.MeiamSub.Assrt。
+| 来源 | 说明 |
+| --- | --- |
+| MetaTube | jsDelivr 优先，GitHub raw 回退 |
+| MeiamSubtitles | 含 Shooter / Thunder / Assrt |
+| MetaShark | 官方 manifest，失败则用 `manifest_cn.json` |
+| ThePornDB | GitHub raw 清单 |
+| Skin Manager | 只保留 Skin Manager，不含同一仓库里的其它插件 |
+| Intro Skipper | 使用 10.11 清单，只保留 Intro Skipper |
+| Danmu | 官方 manifest，失败则用 `manifest_cn.json` |
+
+同步后会生成这些插件条目：MetaTube、Jellyfin.MeiamSub.Shooter、Jellyfin.MeiamSub.Thunder、Jellyfin.MeiamSub.Assrt、MetaShark、ThePornDB、Skin Manager、Intro Skipper、Danmu。
 
 ## 添加或更换插件源
 
 编辑 `sources.json`。同一插件的多个清单地址写在同一个 `urls` 数组里，按顺序尝试，成功即停，避免重复条目。
-
-```json
-{
-  "sources": [
-    {
-      "name": "MetaTube",
-      "urls": [
-        "https://cdn.jsdelivr.net/gh/metatube-community/jellyfin-plugin-metatube@dist/manifest.json",
-        "https://raw.githubusercontent.com/metatube-community/jellyfin-plugin-metatube/dist/manifest.json"
-      ]
-    },
-    {
-      "name": "MeiamSubtitles",
-      "urls": [
-        "https://github.com/91270/MeiamSubtitles.Release/raw/main/Plugin/manifest-stable.json"
-      ]
-    }
-  ]
-}
-```
 
 可选字段：
 

@@ -250,5 +250,868 @@
         "timestamp": "2026-08-07T04:49:15Z"
       }
     ]
+  },
+  {
+    "guid": "9a19103f-16f7-4668-be54-9a1e7a4f7556",
+    "name": "MetaShark",
+    "description": "jellyfin电影元数据插件，影片信息只要从豆瓣获取，并由TMDB补充缺失的剧集数据。",
+    "overview": "jellyfin电影元数据插件",
+    "owner": "cxfksword",
+    "category": "Metadata",
+    "imageUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/raw/main/doc/logo.png",
+    "versions": [
+      {
+        "version": "2.3.6.0",
+        "changelog": "修复电影IMDb标识为空时误保存",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.3.6/metashark_2.3.6.0.zip",
+        "checksum": "1d19a03e5a4debbc65cef4f2639ececb",
+        "timestamp": "2026-08-06T03:42:54"
+      },
+      {
+        "version": "2.3.5.0",
+        "changelog": "修复剧集TMDB标识获取",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.3.5/metashark_2.3.5.0.zip",
+        "checksum": "95e31fdb376d2d01a313a684d6b73a4e",
+        "timestamp": "2026-08-01T06:32:37"
+      },
+      {
+        "version": "2.3.4.0",
+        "changelog": "修正以数字结尾电影名称刮削异常",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.3.4/metashark_2.3.4.0.zip",
+        "checksum": "eaac8249eba9cf9f8cabd66ca440bbcf",
+        "timestamp": "2026-05-19T14:59:48"
+      },
+      {
+        "version": "2.3.3.0",
+        "changelog": "修正无法获取特典剧集图片",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.3.3/metashark_2.3.3.0.zip",
+        "checksum": "996c13d9f97ecb32c6d97739af776fa5",
+        "timestamp": "2026-05-08T14:16:47"
+      },
+      {
+        "version": "2.3.2.0",
+        "changelog": "兼容 10.11.8",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.3.2/metashark_2.3.2.0.zip",
+        "checksum": "4ac5fa8ceb5695084c0ca5123e77c7dd",
+        "timestamp": "2026-05-02T06:00:24"
+      },
+      {
+        "version": "2.1.5.0",
+        "changelog": "修复10.10.x豆瓣",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.1.5/metashark_2.1.5.0.zip",
+        "checksum": "801137d46bd37aba7e7342c88bdf23d5",
+        "timestamp": "2026-02-15T07:49:30"
+      },
+      {
+        "version": "2.3.1.0",
+        "changelog": "修复豆瓣",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.3.1/metashark_2.3.1.0.zip",
+        "checksum": "cb0bb26b7561f3d19490ac8d8b0ba97d",
+        "timestamp": "2026-01-29T13:34:40"
+      },
+      {
+        "version": "2.3.0.0",
+        "changelog": "支持tmdb剧集组，优化刮削",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.3.0/metashark_2.3.0.0.zip",
+        "checksum": "f0b298b487af04e886bbf0afd3912bc3",
+        "timestamp": "2025-12-04T12:52:27"
+      },
+      {
+        "version": "2.2.2.0",
+        "changelog": "对Jellyfin 10.11进行刮削优化，增加开关控制降级到tmdb进行自动匹配",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.2.2/metashark_2.2.2.0.zip",
+        "checksum": "ac7d09477ba12e9518d1e130c90b4c14",
+        "timestamp": "2025-11-29T07:58:56"
+      },
+      {
+        "version": "2.2.1.0",
+        "changelog": "修复演员链接错误",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.2.1/metashark_2.2.1.0.zip",
+        "checksum": "898c019132e0dfd5afb31857d70182dc",
+        "timestamp": "2025-10-27T12:30:49"
+      },
+      {
+        "version": "2.2.0.0",
+        "changelog": "支持jellyfin 10.11",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.2.0/metashark_2.2.0.0.zip",
+        "checksum": "bc76c01f53292a09f96710257a86f5e7",
+        "timestamp": "2025-10-26T08:37:11"
+      },
+      {
+        "version": "2.1.4.0",
+        "changelog": "修正刮削虚拟剧集导致的异常",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.1.4/metashark_2.1.4.0.zip",
+        "checksum": "a10c6dbf0420bf93211a8da3c74250fa",
+        "timestamp": "2025-03-30T05:59:55"
+      },
+      {
+        "version": "2.1.3.0",
+        "changelog": "修正剧集识别",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.1.3/metashark_2.1.3.0.zip",
+        "checksum": "6d23cf8eee4e18ff52371659d884c926",
+        "timestamp": "2025-03-09T03:19:35"
+      },
+      {
+        "version": "2.1.2.0",
+        "changelog": "",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.1.2/metashark_2.1.2.0.zip",
+        "checksum": "98d6e3d75efab3fca6ad8c655ea530bf",
+        "timestamp": "2025-02-16T07:26:59"
+      },
+      {
+        "version": "2.1.1.0",
+        "changelog": "tmdb图片改使用https请求",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.1.1/metashark_2.1.1.0.zip",
+        "checksum": "9cc02efc9468f66815dae5830dba5ab4",
+        "timestamp": "2024-11-10T03:27:04"
+      },
+      {
+        "version": "2.1.0.0",
+        "changelog": "支持刮削合集，商标支持获取日语版本",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.1.0/metashark_2.1.0.0.zip",
+        "checksum": "4c5d7a93e15a13dbea37eb8a5b64c0ed",
+        "timestamp": "2024-09-04T07:55:38"
+      },
+      {
+        "version": "2.0.4.0",
+        "changelog": "支持新的演员访问链接",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.0.4/metashark_2.0.4.0.zip",
+        "checksum": "aad090cde11063388e86ca2be7ecc878",
+        "timestamp": "2024-07-02T08:28:00"
+      },
+      {
+        "version": "2.0.3.0",
+        "changelog": "优化季数识别处理",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.0.3/metashark_2.0.3.0.zip",
+        "checksum": "6695e0a9dcdf90a0c6e7566770205489",
+        "timestamp": "2024-06-08T02:38:08"
+      },
+      {
+        "version": "1.7.16.0",
+        "changelog": "优化识别（这是10.8.x最后一次更新）",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v1.7.16/metashark_1.7.16.0.zip",
+        "checksum": "d8e0c03e20b799b7cf306574aa44c2ec",
+        "timestamp": "2024-06-08T02:31:31"
+      },
+      {
+        "version": "2.0.2.0",
+        "changelog": "修正剧集数识别",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.0.2/metashark_2.0.2.0.zip",
+        "checksum": "1544315a1969901ba2d891c573ac7b7a",
+        "timestamp": "2024-05-25T08:11:49"
+      },
+      {
+        "version": "1.7.15.0",
+        "changelog": "修正剧集数识别",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v1.7.15/metashark_1.7.15.0.zip",
+        "checksum": "d8f0407bd4cf8ada73173f8321778dd5",
+        "timestamp": "2024-05-25T08:05:22"
+      },
+      {
+        "version": "2.0.1.0",
+        "changelog": "修正演员信息缺失",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.0.1/metashark_2.0.1.0.zip",
+        "checksum": "d88fc5cca3e003fff411882082fa856e",
+        "timestamp": "2024-05-18T08:26:03"
+      },
+      {
+        "version": "1.7.14.0",
+        "changelog": "修正演员信息缺失",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v1.7.14/metashark_1.7.14.0.zip",
+        "checksum": "fc85bd567c204f6aa9cd64055266279d",
+        "timestamp": "2024-05-18T08:19:52"
+      },
+      {
+        "version": "2.0.0.0",
+        "changelog": "支持Jellyfin 10.9\n支持直接在文件夹名中设置指定豆瓣ID",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.0.0/metashark_2.0.0.0.zip",
+        "checksum": "344cd6f0a0c5a7335d61089f487f85eb",
+        "timestamp": "2024-05-12T10:53:51"
+      },
+      {
+        "version": "1.7.13.0",
+        "changelog": "优化 tmdb id 查找",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v1.7.13/metashark_1.7.13.0.zip",
+        "checksum": "7de7b6ee39fb241551b68626b4d693b5",
+        "timestamp": "2024-04-13T07:32:23"
+      },
+      {
+        "version": "1.7.12.0",
+        "changelog": "修正电影推荐列表只有一部影片",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v1.7.12/metashark_1.7.12.0.zip",
+        "checksum": "c0fce92fbbc6f5a96421e7c0cb75b5ad",
+        "timestamp": "2024-02-28T03:04:59"
+      },
+      {
+        "version": "1.7.11.0",
+        "changelog": "修正不支持 SxxEPxx 格式",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v1.7.11/metashark_1.7.11.0.zip",
+        "checksum": "47db3474ceb12b2bf97574f0d2d4005a",
+        "timestamp": "2024-02-23T06:56:06"
+      },
+      {
+        "version": "1.7.10.0",
+        "changelog": "修正名称带数字时刮削失败、拆分获取商标配置",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v1.7.10/metashark_1.7.10.0.zip",
+        "checksum": "eaf9bb6cfaedee236a869d5b29865a1a",
+        "timestamp": "2024-02-07T04:19:51"
+      },
+      {
+        "version": "1.7.9.0",
+        "changelog": "添加获取tmdb商标",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v1.7.9/metashark_1.7.9.0.zip",
+        "checksum": "03c3246ed32791c4ef3c96491a36b195",
+        "timestamp": "2024-02-03T06:06:17"
+      },
+      {
+        "version": "1.7.8.0",
+        "changelog": "优化日志输出，剧集支持EP前缀命名",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v1.7.8/metashark_1.7.8.0.zip",
+        "checksum": "a7982662696b1ddd46480a6507a1a9ba",
+        "timestamp": "2024-01-06T02:20:02"
+      },
+      {
+        "version": "1.7.7.0",
+        "changelog": "增加获取海报大图配置\n优化图片处理",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v1.7.7/metashark_1.7.7.0.zip",
+        "checksum": "b0b8b8f715f54b05b20c8288ec33ac68",
+        "timestamp": "2023-12-30T07:19:48"
+      },
+      {
+        "version": "1.7.6.0",
+        "changelog": "改回使用旧国内加速域",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v1.7.6/metashark_1.7.6.0.zip",
+        "checksum": "59a0eceae6022cb032667fc9ca013804",
+        "timestamp": "2023-12-16T07:22:10"
+      }
+    ]
+  },
+  {
+    "category": "Metadata",
+    "guid": "fb7580cf-576d-4991-8e56-0b4520c111d3",
+    "name": "ThePornDB",
+    "description": "This metadata provider helps fill Jellyfin/Emby with information for your adult videos by pulling from the ThePornDB.",
+    "owner": "DirtyRacer",
+    "overview": "Manage Your Adult Videos in Jellyfin/Emby",
+    "imageUrl": "https://theporndb.net/images/logo.png",
+    "versions": [
+      {
+        "checksum": "8d41de924b78c6873f1f987b4c04a5b7",
+        "changelog": "Added Support Jellyfin 10.11; Added Support Emby 4.9; Minor Changes",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/releases/download/1.6.0.11/Jellyfin.Plugin.ThePornDB.zip",
+        "timestamp": "2025-10-22T20:33:52Z",
+        "version": "1.6.0.11"
+      },
+      {
+        "checksum": "fc61da3722fb3ca951783a9d32433dba",
+        "changelog": "Fixed missing performer image on init",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/releases/download/1.5.0.10/Jellyfin.Plugin.ThePornDB.zip",
+        "timestamp": "2024-07-21T20:40:36Z",
+        "version": "1.5.0.10"
+      },
+      {
+        "checksum": "e054861820a92ccbc1f946a64320dcca",
+        "changelog": "Fixed search with id; Removed obsolete task",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/releases/download/1.4.0.9/Jellyfin.Plugin.ThePornDB.zip",
+        "timestamp": "2024-07-21T20:14:55Z",
+        "version": "1.4.0.9"
+      },
+      {
+        "checksum": "059067da9fcef05b5a0694a448e94397",
+        "changelog": "Added Support Jellyfin 10.9; Remove Obsolete Externalds; Added Parent Site;Added Disambiguation Field to Performer Name; Minor Changes",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/releases/download/1.3.0.8/Jellyfin.Plugin.ThePornDB.zip",
+        "timestamp": "2024-06-07T21:00:56Z",
+        "version": "1.3.0.8"
+      },
+      {
+        "checksum": "c343beb2745ad8dc8179d9e009353cc3",
+        "changelog": "Changed Endpoint; Added Movies, JAV Support; Few New Setting; Changed ID format (There is a task for migration, for old users); Minor Changes",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/releases/download/1.2.0.7/Jellyfin.Plugin.ThePornDB.zip",
+        "timestamp": "2024-03-05T13:20:31Z",
+        "version": "1.2.0.7"
+      },
+      {
+        "checksum": "fd496a5496cb05d30475f747e2dd5766",
+        "changelog": "Added Latest Jellyfin Support (10.8.0); Added Latest Emby Support (4.7); Minor Changes",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/releases/download/1.1.0.6/Jellyfin.Plugin.ThePornDB.zip",
+        "timestamp": "2022-06-21T21:32:25Z",
+        "version": "1.1.0.6"
+      },
+      {
+        "checksum": "54039a4a4c43cd6f2c80671516a1fd73",
+        "changelog": "Reworked collections; Added logo for Emby; Minor Changes",
+        "targetAbi": "10.7.0.0",
+        "sourceUrl": "https://github.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/releases/download/1.0.5.5/Jellyfin.Plugin.ThePornDB.zip",
+        "timestamp": "2021-05-27T01:30:03Z",
+        "version": "1.0.5.5"
+      },
+      {
+        "checksum": "342c8d40fdcf81c510cbff355fc762ea",
+        "changelog": "Added Creating Collections based on studios; Added HTTP Caching; Added Using OpenSubtitleHash for Search; Added Using Directory Name for Search; Minor Changes",
+        "targetAbi": "10.7.0.0",
+        "sourceUrl": "https://github.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/releases/download/1.0.4.4/Jellyfin.Plugin.ThePornDB.zip",
+        "timestamp": "2021-05-10T08:35:51Z",
+        "version": "1.0.4.4"
+      },
+      {
+        "checksum": "83b0387de450c2dc36ac733f53bef324",
+        "changelog": "Added HTTP caching; Added using FilePath for search; Added images for collections; Minor changes",
+        "targetAbi": "10.7.0.0",
+        "sourceUrl": "https://github.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/releases/download/1.0.3.3/Jellyfin.Plugin.ThePornDB.zip",
+        "timestamp": "2021-04-24T13:53:12Z",
+        "version": "1.0.3.3"
+      },
+      {
+        "checksum": "ea2a30f14d48f797d1eebb5fb9d11c48",
+        "changelog": "Added custom title; Added more studio; Added collection creating; Minor changes",
+        "targetAbi": "10.7.0.0",
+        "sourceUrl": "https://github.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/releases/download/1.0.2.2/Jellyfin.Plugin.ThePornDB.zip",
+        "timestamp": "2021-04-22T03:40:04Z",
+        "version": "1.0.2.2"
+      },
+      {
+        "checksum": "59ffb85465eaaeef6a5a2431d660909a",
+        "changelog": "Added Performers Provider; Minor changes",
+        "targetAbi": "10.7.0.0",
+        "sourceUrl": "https://github.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/releases/download/1.0.1.1/Jellyfin.Plugin.ThePornDB.zip",
+        "timestamp": "2021-04-19T13:40:04Z",
+        "version": "1.0.1.1"
+      },
+      {
+        "checksum": "f6c034c903b179d37a9a58f920db2499",
+        "changelog": "Initial Release",
+        "targetAbi": "10.7.0.0",
+        "sourceUrl": "https://github.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/releases/download/1.0.0.0/Jellyfin.Plugin.ThePornDB.zip",
+        "timestamp": "2021-04-19T02:10:47Z",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  {
+    "guid": "e9ca8b8e-ca6d-40e7-85dc-58e536df8eb3",
+    "name": "Skin Manager",
+    "description": "Skin manager helps you to download and install most popular skins for jellyfin\n",
+    "overview": "Skins for jellyfin",
+    "owner": "danieladov",
+    "imageUrl": "https://raw.githubusercontent.com/danieladov/jellyfin-plugin-skin-manager/master/src/img/thumb.png",
+    "category": "General",
+    "versions": [
+      {
+        "version": "2.0.2.0",
+        "changelog": "Fix Version\n",
+        "targetAbi": "10.7.0.0",
+        "sourceUrl": "https://github.com/danieladov/jellyfin-plugin-skin-manager/releases/download/2.0.2/Jellyfin-Plugin-SkinManager.zip",
+        "checksum": "74df0156b96ebcb678bc9ff973a7d4f0",
+        "timestamp": "2024-11-04T23:02:52"
+      },
+      {
+        "version": "2.0.1",
+        "changelog": "Added Ultrachromic and few fixes\n",
+        "targetAbi": "10.7.0.0",
+        "sourceUrl": "https://github.com/danieladov/jellyfin-plugin-skin-manager/releases/download/2.0.1/Jellyfin.Plugin.SkinManager.dll.zip",
+        "checksum": "7e0fb755bb579d2c4fa9a3ae733cf7ce",
+        "timestamp": "2022-06-14T12:02:52"
+      },
+      {
+        "version": "2.0.0",
+        "changelog": "New custom skin editor\n",
+        "targetAbi": "10.7.0.0",
+        "sourceUrl": "https://github.com/danieladov/jellyfin-plugin-skin-manager/releases/download/2.0.0/Jellyfin-Plugin-SkinManager.zip",
+        "checksum": "64672b424ca0ac7cd1f3b032eef40b55",
+        "timestamp": "2021-05-13T12:02:52"
+      },
+      {
+        "version": "1.5.0.0",
+        "changelog": "[BETA] Options to preview and edit the skins\n",
+        "targetAbi": "10.7.0.0",
+        "sourceUrl": "https://github.com/danieladov/jellyfin-plugin-skin-manager/releases/download/1.5.0.0/Jellyfin-Plugin-SkinManager.zip",
+        "checksum": "2c479ab72de0f3391bad4da26f9b98d2",
+        "timestamp": "2020-12-11T22:02:52"
+      },
+      {
+        "version": "1.4.0.0",
+        "changelog": "Skin versions support\n",
+        "targetAbi": "10.6.0.0",
+        "sourceUrl": "https://github.com/danieladov/jellyfin-plugin-skin-manager/releases/download/1.4.0.0/Jellyfin-Plugin-SkinManager.zip",
+        "checksum": "10aaad6b203a97b05c8b73bd3de09590",
+        "timestamp": "2020-11-09T16:20:52"
+      },
+      {
+        "version": "1.0.0.0",
+        "changelog": "changelog\n",
+        "targetAbi": "10.6.0.0",
+        "sourceUrl": "https://github.com/danieladov/jellyfin-plugin-skin-manager/releases/download/1.0.0/Jellyfin-Plugin-SkinManager.zip",
+        "checksum": "15305155f67ad72dbfa4082aa6ef5c3c",
+        "timestamp": "2020-11-08T18:14:58"
+      }
+    ]
+  },
+  {
+    "guid": "c83d86bb-a1e0-4c35-a113-e2101cf4ee6b",
+    "name": "Intro Skipper",
+    "overview": "Automatically detect and skip intros in television episodes",
+    "description": "Analyzes the audio of television episodes and detects introduction sequences.",
+    "owner": "AbandonedCart, rlauuzo, jumoog (forked from ConfusedPolarBear)",
+    "category": "MoviesAndShows",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/manifest@a434e00edba70493794e25917cc8d3326d5a85c6/images/intro-skipper/logo.png",
+    "versions": [
+      {
+        "version": "1.10.11.23",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.23)\n",
+        "targetAbi": "10.11.11.0",
+        "sourceUrl": "https://github.com/intro-skipper/intro-skipper/releases/download/10.11/v1.10.11.23/intro-skipper-v1.10.11.23.zip",
+        "checksum": "fde137ca0b6632f6986ac50d669e1b76",
+        "timestamp": "2026-08-22T12:18:41Z"
+      },
+      {
+        "version": "1.10.11.22",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.22)\n",
+        "targetAbi": "10.11.11.0",
+        "sourceUrl": "https://github.com/intro-skipper/intro-skipper/releases/download/10.11/v1.10.11.22/intro-skipper-v1.10.11.22.zip",
+        "checksum": "7507b1915039c94cf67c450e4612fb37",
+        "timestamp": "2026-07-04T17:40:15Z"
+      },
+      {
+        "version": "1.10.11.21",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.21)\n",
+        "targetAbi": "10.11.11.0",
+        "sourceUrl": "https://github.com/intro-skipper/intro-skipper/releases/download/10.11/v1.10.11.21/intro-skipper-v1.10.11.21.zip",
+        "checksum": "e069712209a4e8310f600a157d405829",
+        "timestamp": "2026-06-10T16:21:50Z"
+      },
+      {
+        "version": "1.10.11.19",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.19)\n",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/intro-skipper/intro-skipper/releases/download/10.11/v1.10.11.19/intro-skipper-v1.10.11.19.zip",
+        "checksum": "bafed47c18b5159747e5da9ad777253e",
+        "timestamp": "2026-05-02T21:38:46Z"
+      },
+      {
+        "version": "1.10.11.17",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.17)\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/intro-skipper/intro-skipper/releases/download/10.11/v1.10.11.17/intro-skipper-v1.10.11.17.zip",
+        "checksum": "f14d188bc9c06873bf4b6076efab10f3",
+        "timestamp": "2026-03-28T19:19:08Z"
+      },
+      {
+        "version": "1.10.11.16",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.16)\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/intro-skipper/intro-skipper/releases/download/10.11/v1.10.11.16/intro-skipper-v1.10.11.16.zip",
+        "checksum": "66a8c117cde86ba5dfbe13a946fa4c71",
+        "timestamp": "2026-03-08T13:53:44Z"
+      },
+      {
+        "version": "1.10.11.15",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.15)\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/intro-skipper/intro-skipper/releases/download/10.11/v1.10.11.15/intro-skipper-v1.10.11.15.zip",
+        "checksum": "72274e68e40858311059a93a19dc7304",
+        "timestamp": "2026-02-20T19:16:11Z"
+      },
+      {
+        "version": "1.10.11.14",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.14)\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/intro-skipper/intro-skipper/releases/download/10.11/v1.10.11.14/intro-skipper-v1.10.11.14.zip",
+        "checksum": "dc5104987d5978008bd86f63934bea4a",
+        "timestamp": "2026-01-25T20:31:56Z"
+      },
+      {
+        "version": "1.10.11.13",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.13)\n",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/intro-skipper/intro-skipper/releases/download/10.11/v1.10.11.13/intro-skipper-v1.10.11.13.zip",
+        "checksum": "22dfe07e8be11dc58b0257eefa0f5980",
+        "timestamp": "2026-01-16T21:38:26Z"
+      }
+    ]
+  },
+  {
+    "guid": "5B39DA44-5314-4940-8E26-54C821C17F86",
+    "name": "Danmu",
+    "description": "jellyfin的b站弹幕自动下载插件，会匹配b站番剧/电影视频，自动下载对应弹幕，并定时更新。",
+    "overview": "jellyfin弹幕下载插件",
+    "owner": "cxfksword",
+    "category": "Metadata",
+    "imageUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/raw/main/doc/logo.png",
+    "versions": [
+      {
+        "version": "2.7.3.0",
+        "changelog": "支持单集弹幕刷新API",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.7.3/danmu_2.7.3.0.zip",
+        "checksum": "83c805acb898461e473188a642892eed",
+        "timestamp": "2026-08-26T16:08:11"
+      },
+      {
+        "version": "2.7.2.0",
+        "changelog": "修复芒果TV搜索接口403问题：改用新的pc/search/v2接口并实现MD5签名算法，适配新版搜索结果结构，新增电影/综艺搜索测试",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.7.2/danmu_2.7.2.0.zip",
+        "checksum": "2ed1622274e07058bc0285ce6b5480e3",
+        "timestamp": "2026-08-22T07:54:44"
+      },
+      {
+        "version": "2.7.1.0",
+        "changelog": "修正10.11.x 弹幕下载在元数据刮削完成前触发",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.7.1/danmu_2.7.1.0.zip",
+        "checksum": "7014ca3cb185ddd82a75b66000dec164",
+        "timestamp": "2026-07-16T09:11:21"
+      },
+      {
+        "version": "2.7.0.0",
+        "changelog": "增加人人视频弹幕源",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.7.0/danmu_2.7.0.0.zip",
+        "checksum": "11c8d632f12e306f7f6659f35cbe7168",
+        "timestamp": "2026-06-27T06:44:57"
+      },
+      {
+        "version": "2.6.4.0",
+        "changelog": "修正优酷弹幕解析，修正腾讯搜索结果过滤",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.6.4/danmu_2.6.4.0.zip",
+        "checksum": "64963a61e98ee94966def3a010ab7193",
+        "timestamp": "2026-06-19T07:13:57"
+      },
+      {
+        "version": "2.6.3.0",
+        "changelog": "修复腾讯电视剧搜索",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.6.3/danmu_2.6.3.0.zip",
+        "checksum": "6475430ec3f61e8378f9abc276990052",
+        "timestamp": "2026-05-30T10:53:47"
+      },
+      {
+        "version": "2.6.2.0",
+        "changelog": "修正b站bv/av号剧集元数据没保存",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.6.2/danmu_2.6.2.0.zip",
+        "checksum": "809e38913fd779b96213148430ecb035",
+        "timestamp": "2026-05-17T09:23:34"
+      },
+      {
+        "version": "2.6.1.0",
+        "changelog": "修复腾讯搜索",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.6.1/danmu_2.6.1.0.zip",
+        "checksum": "1fa62d5ebe9a308e190aef8668944823",
+        "timestamp": "2026-05-13T13:57:16"
+      },
+      {
+        "version": "2.6.0.0",
+        "changelog": "重构合并弹幕元数据，避免nfo文件残留旧的弹幕元数据没法删除",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.6.0/danmu_2.6.0.0.zip",
+        "checksum": "feb1227df5bd96f97a797c5cd2e360bc",
+        "timestamp": "2026-05-08T13:58:54"
+      },
+      {
+        "version": "2.5.2.0",
+        "changelog": "限制bilibili弹幕下载频率，避免风控",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.5.2/danmu_2.5.2.0.zip",
+        "checksum": "4176b5e7e4d25b12ada2aed49739a886",
+        "timestamp": "2026-01-10T06:51:33"
+      },
+      {
+        "version": "2.5.1.0",
+        "changelog": "修正不触发nfo更新元数据",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.5.1/danmu_2.5.1.0.zip",
+        "checksum": "0590648ae7eb2cd681af0affb0a61d87",
+        "timestamp": "2025-12-20T06:04:27"
+      },
+      {
+        "version": "2.5.0.0",
+        "changelog": "支持自建danmu_api源",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.5.0/danmu_2.5.0.0.zip",
+        "checksum": "8e8d59f3412cc5bc0a1553e3a2e31b32",
+        "timestamp": "2025-12-10T13:47:16"
+      },
+      {
+        "version": "2.4.3.0",
+        "changelog": "修正影响电视剧季名称更新",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.4.3/danmu_2.4.3.0.zip",
+        "checksum": "96f9446ddafe23475d0e048521816203",
+        "timestamp": "2025-11-30T08:06:14"
+      },
+      {
+        "version": "2.4.2.0",
+        "changelog": "修正插件版本兼容性",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.4.2/danmu_2.4.2.0.zip",
+        "checksum": "9f49db4a471583950c3dad7a1c1e0a0d",
+        "timestamp": "2025-11-21T13:30:42"
+      },
+      {
+        "version": "2.4.1.0",
+        "changelog": "修正iqiyi部分弹幕下载失败",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.4.1/danmu_2.4.1.0.zip",
+        "checksum": "572e0bb954394b9b723c2f87a369a7eb",
+        "timestamp": "2025-11-19T03:11:58"
+      },
+      {
+        "version": "2.4.0.0",
+        "changelog": "剧集弹幕倒序下载，支持弹弹接口规范，方便接入senplayer等播放器",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.4.0/danmu_2.4.0.0.zip",
+        "checksum": "b8d1280008ff90351df64dd88eabe795",
+        "timestamp": "2025-11-16T14:29:02"
+      },
+      {
+        "version": "2.3.0.0",
+        "changelog": "支持Jellyfin 10.11",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.3.0/danmu_2.3.0.0.zip",
+        "checksum": "45680ff4a48b6fa37702bde5ba20e28a",
+        "timestamp": "2025-10-29T14:06:24"
+      },
+      {
+        "version": "2.2.0.0",
+        "changelog": "修复iqiyi，废弃弹弹play",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.2.0/danmu_2.2.0.0.zip",
+        "checksum": "dc2d8d2383e84e5b5d8fe46f8823b1f0",
+        "timestamp": "2025-10-02T10:25:31"
+      },
+      {
+        "version": "2.1.1.0",
+        "changelog": "弹弹play接口限速，去掉定时更新功能，降低弹弹play服务器压力",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.1.1/danmu_2.1.1.0.zip",
+        "checksum": "fb30c58e1609bd3ffa91badfa63029ea",
+        "timestamp": "2025-05-10T03:25:48"
+      },
+      {
+        "version": "2.1.0.0",
+        "changelog": "弹弹增加文件hash匹配，修正mgtv下载",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.1.0/danmu_2.1.0.0.zip",
+        "checksum": "fb8ed06c72b4b6bbdd24692362274dc7",
+        "timestamp": "2025-03-23T06:41:01"
+      },
+      {
+        "version": "2.0.13.0",
+        "changelog": "Merge pull request #71 from moetayuko/main\n\nfix: episode count check when processing single episodes",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.0.13/danmu_2.0.13.0.zip",
+        "checksum": "be3f5157cfefddd902f9668c7debb92b",
+        "timestamp": "2025-02-24T14:02:39"
+      },
+      {
+        "version": "2.0.12.0",
+        "changelog": "",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.0.12/danmu_2.0.12.0.zip",
+        "checksum": "0eee8409868c159f2d40d1953a46dd5f",
+        "timestamp": "2025-02-16T07:20:20"
+      },
+      {
+        "version": "2.0.11.0",
+        "changelog": "支持弹弹api 新版验证",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.0.11/danmu_2.0.11.0.zip",
+        "checksum": "964201a102f8fd303c1770228b4ce0e3",
+        "timestamp": "2025-02-03T08:37:24"
+      },
+      {
+        "version": "2.0.10.0",
+        "changelog": "修正mgtv 弹幕下载",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.0.10/danmu_2.0.10.0.zip",
+        "checksum": "97866f917b6abf6eafb2b7913cc23337",
+        "timestamp": "2024-12-08T07:11:20"
+      },
+      {
+        "version": "2.0.9.0",
+        "changelog": "删除emoji表情符号，解决ass字幕乱码问题",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.0.9/danmu_2.0.9.0.zip",
+        "checksum": "d6820fdff658744c480a88b391aa4360",
+        "timestamp": "2024-10-20T03:55:35"
+      },
+      {
+        "version": "2.0.8.0",
+        "changelog": "优化腾讯视频剧集api",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.0.8/danmu_2.0.8.0.zip",
+        "checksum": "b404fcbc0bfeb60c972166841836a938",
+        "timestamp": "2024-09-01T02:29:25"
+      },
+      {
+        "version": "2.0.7.0",
+        "changelog": "修正腾讯视频不下载超过100的剧集弹幕",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.0.7/danmu_2.0.7.0.zip",
+        "checksum": "271c94af5e356b128f8c476d1b82404e",
+        "timestamp": "2024-08-31T05:42:10"
+      },
+      {
+        "version": "2.0.6.0",
+        "changelog": "修正b站番剧包括预告导致弹幕下载失败",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.0.6/danmu_2.0.6.0.zip",
+        "checksum": "92961f59c7f041ae5d3632be2cac9839",
+        "timestamp": "2024-07-24T02:59:35"
+      },
+      {
+        "version": "2.0.5.0",
+        "changelog": "修正新增剧集不会自动下载弹幕",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.0.5/danmu_2.0.5.0.zip",
+        "checksum": "264d7992b34a246a9e256301408b0397",
+        "timestamp": "2024-07-03T13:50:36"
+      },
+      {
+        "version": "1.7.11.0",
+        "changelog": "修正新增剧集不会自动下载弹幕（这是 Jellyfin v10.8 最后一次更新）",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v1.7.11/danmu_1.7.11.0.zip",
+        "checksum": "adc453ffc75fe9ad64b795e209aef012",
+        "timestamp": "2024-07-03T13:49:02"
+      },
+      {
+        "version": "2.0.4.0",
+        "changelog": "增加弹幕数和剧集数需一致限制配置",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.0.4/danmu_2.0.4.0.zip",
+        "checksum": "6e12b7d70a0df2c83bcbdec947fc408f",
+        "timestamp": "2024-07-02T14:25:40"
+      },
+      {
+        "version": "1.7.10.0",
+        "changelog": "增加弹幕数和剧集数需一致限制配置（这是Jellyfin v10.8最后一版更新）",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v1.7.10/danmu_1.7.10.0.zip",
+        "checksum": "db2a9f8f63d6d046f520016ed62ece91",
+        "timestamp": "2024-07-02T14:23:54"
+      },
+      {
+        "version": "2.0.3.0",
+        "changelog": "修正弹幕不自动下载",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.0.3/danmu_2.0.3.0.zip",
+        "checksum": "2b83cc8dd7296871bc2007a4f92dbbe5",
+        "timestamp": "2024-06-23T03:18:09"
+      },
+      {
+        "version": "2.0.2.0",
+        "changelog": "修正弹幕下载失败",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.0.2/danmu_2.0.2.0.zip",
+        "checksum": "0a9a2ae7df0a999645f9cf9546accc36",
+        "timestamp": "2024-06-10T13:39:49"
+      },
+      {
+        "version": "2.0.1.0",
+        "changelog": "修正爱奇艺部分剧集缺失",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.0.1/danmu_2.0.1.0.zip",
+        "checksum": "73b6cd690c56bc610484448a98680b68",
+        "timestamp": "2024-05-22T12:34:42"
+      },
+      {
+        "version": "1.7.9.0",
+        "changelog": "修正爱奇艺部分剧集缺失",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v1.7.9/danmu_1.7.9.0.zip",
+        "checksum": "004aabc902f558d3e378ce71bd853188",
+        "timestamp": "2024-05-22T12:23:09"
+      },
+      {
+        "version": "2.0.0.0",
+        "changelog": "支持 Jellyfin 10.9",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.0.0/danmu_2.0.0.0.zip",
+        "checksum": "c4ebc578fe3a1d5378b414f5a4677ea8",
+        "timestamp": "2024-05-12T13:57:12"
+      },
+      {
+        "version": "1.7.8.0",
+        "changelog": "修复爱奇艺",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v1.7.8/danmu_1.7.8.0.zip",
+        "checksum": "fede1b22100a62e1cdce12dbc5ac7990",
+        "timestamp": "2024-04-30T15:11:12"
+      },
+      {
+        "version": "1.7.7.0",
+        "changelog": "修复芒果tv",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v1.7.7/danmu_1.7.7.0.zip",
+        "checksum": "e60fd4d61460b6549d0009c713578dcd",
+        "timestamp": "2024-04-20T01:53:09"
+      },
+      {
+        "version": "1.7.6.0",
+        "changelog": "修正爱奇艺，优化搜索结果，更新api",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v1.7.6/danmu_1.7.6.0.zip",
+        "checksum": "79cc375cf02fc8e8c6c2ba1226ca0b14",
+        "timestamp": "2024-04-10T00:31:52"
+      },
+      {
+        "version": "1.7.5.0",
+        "changelog": "优化B站弹幕下载",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v1.7.5/danmu_1.7.5.0.zip",
+        "checksum": "2b26f3c17cdb77922064bc7072b6d01d",
+        "timestamp": "2024-02-03T02:40:22"
+      },
+      {
+        "version": "1.7.4.0",
+        "changelog": "改回使用旧国内加速域",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v1.7.4/danmu_1.7.4.0.zip",
+        "checksum": "7d0c2f8f70111363f03a5aea39583eef",
+        "timestamp": "2023-12-16T07:40:58"
+      }
+    ]
   }
 ]

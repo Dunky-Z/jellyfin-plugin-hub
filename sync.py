@@ -22,7 +22,7 @@ DEFAULT_CONFIG = os.path.join(ROOT, "sources.json")
 DEFAULT_OUTPUT = os.path.join(ROOT, "dist", "manifest.json")
 DEFAULT_STATUS = os.path.join(ROOT, "dist", "status.json")
 USER_AGENT = "jellyfin-plugin-hub/1.0"
-FETCH_TIMEOUT = 30
+FETCH_TIMEOUT = 60
 
 
 class FetchError(Exception):

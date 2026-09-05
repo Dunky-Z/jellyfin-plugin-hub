@@ -242,22 +242,46 @@ class ConfigTests(unittest.TestCase):
     def test_load_config_reads_sources_json(self):
         config_path = os.path.join(ROOT, "sources.json")
         config = sync.load_config(config_path)
-        names = [item["name"] for item in config["sources"]]
-        self.assertEqual(names, ["MetaTube", "MeiamSubtitles"])
-        metatube_urls = config["sources"][0]["urls"]
+        by_name = {item["name"]: item for item in config["sources"]}
+        self.assertEqual(
+            [item["name"] for item in config["sources"]],
+            [
+                "MetaTube",
+                "MeiamSubtitles",
+                "MetaShark",
+                "ThePornDB",
+                "Skin Manager",
+                "Intro Skipper",
+                "Danmu",
+            ],
+        )
         self.assertIn(
             "https://cdn.jsdelivr.net/gh/metatube-community/jellyfin-plugin-metatube@dist/manifest.json",
-            metatube_urls,
+            by_name["MetaTube"]["urls"],
         )
         self.assertIn(
-            "https://raw.githubusercontent.com/metatube-community/jellyfin-plugin-metatube/dist/manifest.json",
-            metatube_urls,
+            "https://github.com/91270/MeiamSubtitles.Release/raw/main/Plugin/manifest-stable.json",
+            by_name["MeiamSubtitles"]["urls"],
+        )
+        self.assertIn(
+            "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest.json",
+            by_name["MetaShark"]["urls"],
+        )
+        self.assertIn(
+            "https://raw.githubusercontent.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/main/manifest.json",
+            by_name["ThePornDB"]["urls"],
         )
         self.assertEqual(
-            config["sources"][1]["urls"],
-            [
-                "https://github.com/91270/MeiamSubtitles.Release/raw/main/Plugin/manifest-stable.json"
-            ],
+            by_name["Skin Manager"]["include"],
+            ["e9ca8b8e-ca6d-40e7-85dc-58e536df8eb3"],
+        )
+        self.assertEqual(
+            by_name["Intro Skipper"]["include"],
+            ["c83d86bb-a1e0-4c35-a113-e2101cf4ee6b"],
+        )
+        self.assertIn(
+            "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/manifest/manifest.json",
+            by_name["Danmu"]["urls"],
         )
 
 

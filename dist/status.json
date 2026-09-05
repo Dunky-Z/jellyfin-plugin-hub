@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-05T03:22:05Z",
-  "pluginCount": 4,
+  "generatedAt": "2026-09-05T03:50:16Z",
+  "pluginCount": 9,
   "sources": [
     {
       "name": "MetaTube",
@@ -11,8 +11,38 @@
     {
       "name": "MeiamSubtitles",
       "ok": true,
-      "url": "https://github.com/91270/MeiamSubtitles.Release/raw/main/Plugin/manifest-stable.json",
+      "url": "https://cdn.jsdelivr.net/gh/91270/MeiamSubtitles.Release@main/Plugin/manifest-stable.json",
       "count": 3
+    },
+    {
+      "name": "MetaShark",
+      "ok": true,
+      "url": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest.json",
+      "count": 1
+    },
+    {
+      "name": "ThePornDB",
+      "ok": true,
+      "url": "https://cdn.jsdelivr.net/gh/ThePornDatabase/Jellyfin.Plugin.ThePornDB@main/manifest.json",
+      "count": 1
+    },
+    {
+      "name": "Skin Manager",
+      "ok": true,
+      "url": "https://cdn.jsdelivr.net/gh/danieladov/JellyfinPluginManifest@master/manifest.json",
+      "count": 1
+    },
+    {
+      "name": "Intro Skipper",
+      "ok": true,
+      "url": "https://cdn.jsdelivr.net/gh/intro-skipper/manifest@main/10.11/manifest.json",
+      "count": 1
+    },
+    {
+      "name": "Danmu",
+      "ok": true,
+      "url": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/manifest/manifest.json",
+      "count": 1
     }
   ]
 }

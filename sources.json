@@ -10,7 +10,50 @@
     {
       "name": "MeiamSubtitles",
       "urls": [
-        "https://github.com/91270/MeiamSubtitles.Release/raw/main/Plugin/manifest-stable.json"
+        "https://cdn.jsdelivr.net/gh/91270/MeiamSubtitles.Release@main/Plugin/manifest-stable.json",
+        "https://github.com/91270/MeiamSubtitles.Release/raw/main/Plugin/manifest-stable.json",
+        "https://raw.githubusercontent.com/91270/MeiamSubtitles.Release/main/Plugin/manifest-stable.json"
+      ]
+    },
+    {
+      "name": "MetaShark",
+      "urls": [
+        "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest.json",
+        "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest_cn.json"
+      ]
+    },
+    {
+      "name": "ThePornDB",
+      "urls": [
+        "https://cdn.jsdelivr.net/gh/ThePornDatabase/Jellyfin.Plugin.ThePornDB@main/manifest.json",
+        "https://raw.githubusercontent.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/main/manifest.json"
+      ]
+    },
+    {
+      "name": "Skin Manager",
+      "urls": [
+        "https://cdn.jsdelivr.net/gh/danieladov/JellyfinPluginManifest@master/manifest.json",
+        "https://raw.githubusercontent.com/danieladov/JellyfinPluginManifest/master/manifest.json"
+      ],
+      "include": [
+        "e9ca8b8e-ca6d-40e7-85dc-58e536df8eb3"
+      ]
+    },
+    {
+      "name": "Intro Skipper",
+      "urls": [
+        "https://cdn.jsdelivr.net/gh/intro-skipper/manifest@main/10.11/manifest.json",
+        "https://raw.githubusercontent.com/intro-skipper/manifest/main/10.11/manifest.json"
+      ],
+      "include": [
+        "c83d86bb-a1e0-4c35-a113-e2101cf4ee6b"
+      ]
+    },
+    {
+      "name": "Danmu",
+      "urls": [
+        "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/manifest/manifest.json",
+        "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/manifest/manifest_cn.json"
       ]
     }
   ]
