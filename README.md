@@ -2,35 +2,25 @@
 
 把多个 Jellyfin 插件仓库清单合并成一个地址。Jellyfin 控制台里只需要添加这一个存储库；以后增删插件、源地址失效或更换时，只改本仓库里的 `sources.json` 并重新同步即可。
 
-做法参考 [LxnChan/jellyfin-plugin-mirror](https://github.com/LxnChan/jellyfin-plugin-mirror)：对外只暴露一份 `manifest.json`。区别是本项目只聚合你自己要用的插件清单，不镜像官方全量仓库，也不重新托管插件 zip。安装时仍从各插件原始 `sourceUrl` 下载。
+本项目只聚合你自己要用的插件清单，不镜像官方全量仓库，也不重新托管插件 zip。安装时仍从各插件原始 `sourceUrl` 下载。
 
 ## 在 Jellyfin 中使用
 
-把本仓库推送到 GitHub 或 GitLab 后，在 Jellyfin：
-
 **控制台 -> 插件 -> 存储库 -> 添加**
 
-填写（把 `OWNER` 换成你的用户名或组织名）：
+填写：
 
 ```text
-https://raw.githubusercontent.com/OWNER/jellyfin-plugin-hub/main/dist/manifest.json
+https://raw.githubusercontent.com/Dunky-Z/jellyfin-plugin-hub/main/dist/manifest.json
 ```
 
 jsDelivr 备用地址：
 
 ```text
-https://cdn.jsdelivr.net/gh/OWNER/jellyfin-plugin-hub@main/dist/manifest.json
-```
-
-GitLab 地址：
-
-```text
-https://gitlab.com/OWNER/jellyfin-plugin-hub/-/raw/main/dist/manifest.json
+https://cdn.jsdelivr.net/gh/Dunky-Z/jellyfin-plugin-hub@main/dist/manifest.json
 ```
 
 添加成功后，到 **插件 -> 目录** 即可看到本仓库收录的插件并安装。原来那些逐个添加的存储库可以删掉。
-
-如果暂时不推远程，也可以把 `dist/manifest.json` 放到任意 Jellyfin 能访问的 HTTP 服务上，存储库地址填该文件的 URL。
 
 ## 当前收录
 
@@ -107,8 +97,6 @@ python3 sync.py --allow-partial
 ## 自动同步
 
 GitHub Actions 会在每周一 UTC 01:00 拉取各源并提交更新后的 `dist/`。也可在 Actions 页面手动触发。
-
-GitLab CI 会在默认分支、定时流水线或手动流水线中运行测试并生成 `dist/` 产物。若要在 GitLab 上回写提交，需要自行配置可写仓库的 token。
 
 ## 测试
 
