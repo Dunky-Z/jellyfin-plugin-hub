@@ -1,0 +1,17 @@
+{
+  "sources": [
+    {
+      "name": "MetaTube",
+      "urls": [
+        "https://cdn.jsdelivr.net/gh/metatube-community/jellyfin-plugin-metatube@dist/manifest.json",
+        "https://raw.githubusercontent.com/metatube-community/jellyfin-plugin-metatube/dist/manifest.json"
+      ]
+    },
+    {
+      "name": "MeiamSubtitles",
+      "urls": [
+        "https://github.com/91270/MeiamSubtitles.Release/raw/main/Plugin/manifest-stable.json"
+      ]
+    }
+  ]
+}

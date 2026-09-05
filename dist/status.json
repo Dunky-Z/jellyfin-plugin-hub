@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-09-05T03:22:05Z",
+  "pluginCount": 4,
+  "sources": [
+    {
+      "name": "MetaTube",
+      "ok": true,
+      "url": "https://cdn.jsdelivr.net/gh/metatube-community/jellyfin-plugin-metatube@dist/manifest.json",
+      "count": 1
+    },
+    {
+      "name": "MeiamSubtitles",
+      "ok": true,
+      "url": "https://github.com/91270/MeiamSubtitles.Release/raw/main/Plugin/manifest-stable.json",
+      "count": 3
+    }
+  ]
+}

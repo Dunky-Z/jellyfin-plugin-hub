@@ -1,0 +1,44 @@
+name: sync
+
+on:
+  schedule:
+    - cron: "0 1 * * 1"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - sources.json
+      - sync.py
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Test
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Sync manifests
+        run: python3 sync.py
+
+      - name: Commit updated catalog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/manifest.json dist/status.json
+          if git diff --cached --quiet; then
+            echo "No catalog changes"
+          else
+            git commit -m "chore: sync plugin manifests"
+            git push
+          fi
