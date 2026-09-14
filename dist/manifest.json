@@ -261,6 +261,14 @@
     "imageUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/raw/main/doc/logo.png",
     "versions": [
       {
+        "version": "2.3.7.0",
+        "changelog": "修复tmdbid被imdb反查覆盖",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.3.7/metashark_2.3.7.0.zip",
+        "checksum": "760643215241db234b49ca92e87f3c7c",
+        "timestamp": "2026-09-12T09:51:03"
+      },
+      {
         "version": "2.3.6.0",
         "changelog": "修复电影IMDb标识为空时误保存",
         "targetAbi": "10.11.0.0",
@@ -694,6 +702,14 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/manifest@a434e00edba70493794e25917cc8d3326d5a85c6/images/intro-skipper/logo.png",
     "versions": [
       {
+        "version": "1.10.11.24",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.24)\n",
+        "targetAbi": "10.11.11.0",
+        "sourceUrl": "https://github.com/intro-skipper/intro-skipper/releases/download/10.11/v1.10.11.24/intro-skipper-v1.10.11.24.zip",
+        "checksum": "d70833fa73b6a6a800befa5db5cc2c23",
+        "timestamp": "2026-09-09T17:20:35Z"
+      },
+      {
         "version": "1.10.11.23",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.23)\n",
         "targetAbi": "10.11.11.0",
@@ -776,6 +792,14 @@
     "category": "Metadata",
     "imageUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/raw/main/doc/logo.png",
     "versions": [
+      {
+        "version": "2.8.0.0",
+        "changelog": "兼容 Jellyfin 12 元数据保存接口",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/v2.8.0/danmu_2.8.0.0.zip",
+        "checksum": "8498d9a1ed6cdfe27b94d78e77d2752b",
+        "timestamp": "2026-09-11T04:11:53"
+      },
       {
         "version": "2.7.4.0",
         "changelog": "修复ASS与实时监控死循环",
