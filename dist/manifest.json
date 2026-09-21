@@ -159,6 +159,14 @@
     "imageUrl": "https://github.com/91270/MeiamSubtitles.Release/raw/main/Plugin/images/Jellyfin.MeiamSub.Thunder.png",
     "versions": [
       {
+        "version": "1.0.17.0",
+        "changelog": "降低 Jellyfin SDK 和运行时基线，兼容 Jellyfin 10.10.7 至 12.1。",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/91270/MeiamSubtitles.Release/raw/main/Plugin/Jellyfin.MeiamSub.Thunder_1.0.17.0.zip",
+        "checksum": "BAB5DB8501E83B655B3D3BBB0B81B4A8",
+        "timestamp": "2026-09-16T08:13:02Z"
+      },
+      {
         "version": "1.0.16.0",
         "changelog": "修复超长视频时长溢出并精简诊断日志；Shooter 自本版本起停止维护和发布。",
         "targetAbi": "10.11.0.0",
@@ -233,6 +241,14 @@
     "category": "Subtitles",
     "imageUrl": "https://github.com/91270/MeiamSubtitles.Release/raw/main/Plugin/images/Jellyfin.MeiamSub.Assrt.png",
     "versions": [
+      {
+        "version": "1.0.17.0",
+        "changelog": "降低 Jellyfin SDK 和运行时基线，兼容 Jellyfin 10.10.7 至 12.1。",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/91270/MeiamSubtitles.Release/raw/main/Plugin/Jellyfin.MeiamSub.Assrt_1.0.17.0.zip",
+        "checksum": "73E0D15E88E4C3DB6151C2101DC7CD0E",
+        "timestamp": "2026-09-16T08:13:02Z"
+      },
       {
         "version": "1.0.16.0",
         "changelog": "精简诊断日志；Emby 运行时复用宿主提供的 SharpCompress，避免程序集冲突。",
