@@ -277,6 +277,14 @@
     "imageUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/raw/main/doc/logo.png",
     "versions": [
       {
+        "version": "2.3.8.0",
+        "changelog": "修复刮削标题写入错误",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/v2.3.8/metashark_2.3.8.0.zip",
+        "checksum": "f355aaf7c597150bba00b3179756bbd1",
+        "timestamp": "2026-10-08T04:29:49"
+      },
+      {
         "version": "2.3.7.0",
         "changelog": "修复tmdbid被imdb反查覆盖",
         "targetAbi": "10.11.0.0",
