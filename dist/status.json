@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T07:05:47Z",
+  "generatedAt": "2026-11-09T07:33:59Z",
   "pluginCount": 10,
   "sources": [
     {
@@ -17,7 +17,7 @@
     {
       "name": "MetaShark",
       "ok": true,
-      "url": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest.json",
+      "url": "https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest_cn.json",
       "count": 1
     },
     {
@@ -41,7 +41,7 @@
     {
       "name": "Danmu",
       "ok": true,
-      "url": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/manifest/manifest.json",
+      "url": "https://github.com/cxfksword/jellyfin-plugin-danmu/releases/download/manifest/manifest_cn.json",
       "count": 1
     },
     {
